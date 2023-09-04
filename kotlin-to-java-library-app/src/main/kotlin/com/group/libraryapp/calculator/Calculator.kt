@@ -1,7 +1,5 @@
 package com.group.libraryapp.calculator
 
-import java.lang.IllegalArgumentException
-
 class Calculator (
     var number: Int
 ) {

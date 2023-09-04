@@ -1,7 +1,6 @@
 package com.group.libraryapp.calculator
 
 import org.assertj.core.api.Assertions.assertThat
-import org.assertj.core.api.Assertions.assertThatThrownBy
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 
@@ -48,7 +47,7 @@ class JunitCalculatorTest {
         val calculator = Calculator(5)
 
         // when
-        calculator.add(2)
+        calculator.divide(2)
 
         // then
         assertThat(calculator.number).isEqualTo(2)
