@@ -114,7 +114,7 @@ class UserServiceTest @Autowired constructor(
 
         // then
         assertThat(results).hasSize(1)
-        assertThat(results[0].name).isEqualTo("a")
+        assertThat(results[0].name).isEqualTo("A")
         assertThat(results[0].books).isEmpty()
     }
 }
