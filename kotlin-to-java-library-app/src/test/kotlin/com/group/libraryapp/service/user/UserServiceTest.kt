@@ -102,7 +102,7 @@ class UserServiceTest @Autowired constructor(
     @DisplayName("대출 기록이 많은 유저의 응답이 정상 동작한다.")
     fun getUserLoanHistoriesTest2() {
         // given
-        val savedUser = userRepository.save(User("a", null))
+        val savedUser = userRepository.save(User("A", null))
         userLoanHistoryRepository.saveAll(listOf(
             UserLoanHistory.fixture(savedUser, "책1", UserLoanStatus.LOANED),
             UserLoanHistory.fixture(savedUser, "책2", UserLoanStatus.LOANED),
